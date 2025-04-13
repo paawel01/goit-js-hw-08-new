@@ -98,8 +98,8 @@ gallery.addEventListener('click', (event) => {
   
     instance.show();
   
-    const handleEscape = (e) => {
-      if (e.key === 'Escape') {
+    const handleEscape = (esc) => {
+      if (esc.key === 'Escape') {
         instance.close();
         window.removeEventListener('keydown', handleEscape);
       }
